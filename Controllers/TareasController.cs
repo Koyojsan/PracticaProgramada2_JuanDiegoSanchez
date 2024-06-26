@@ -36,7 +36,7 @@ namespace PracticaProgramada2_JuanDiegoSanchez.Controllers
             var tarea = await _context.Tareas
                 .FirstOrDefaultAsync(m => m.IdTarea == id);
             if (tarea == null)
-            {
+            { 
                 return NotFound();
             }
 
